@@ -1,2 +1,2 @@
 # Writer-PRO
-An AI writing assistant
+Documentations soon
