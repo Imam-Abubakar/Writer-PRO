@@ -31,7 +31,7 @@ Title: ${req.body.userInput}
 
     const secondPrompt =
         `
-  Take the table of contents and title of the article below to generate a well summarized article. Kindly ensure that the article is well-constructed and concise. Explain each points in detail.
+  Take the table of contents and title of the article below to generate a really long well summarized article. Kindly ensure that the article is well-constructed and concise. Explain each points in detail.
 
   Title: ${req.body.userInput}
 
