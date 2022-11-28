@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Manrope', sans-serif;
+background-color: rgb(1, 1, 32);
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 .root {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -27,12 +29,80 @@ body {
     flex-flow: column nowrap;
     gap: 10px;
     height: fit-content;
-    max-width: 975px;
+    max-width: 90vw;
     overflow: auto;
     padding: 50px;
     position: relative;
     width: auto;
     gap: 64px;
+}
+
+.logo {
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2vh;
+    color: rgb(255, 246, 238);
+}
+
+.header-subtitle .subtitle-1 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: rgb(255, 246, 238);
+}
+
+.header-subtitle .subtitle-2 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: rgb(255, 246, 238);
+}
+
+.prompt-container {
+    place-content: flex-end center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 16px;
+    height: min-content;
+    padding: 0px;
+    width: 60.8vw;  
+}
+
+.prompt-box {
+    border-color: rgb(6, 184, 255);
+    border-width: 2px;
+    border-style: solid;
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255, 246, 238);
+    border-radius: 15px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    height: 50px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 60.8vw;
+    will-change: transform;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    text-align: start;
+    color: rgb(1, 1, 32);
 }
 
 .header {    
@@ -58,60 +128,11 @@ body {
     margin: 0;
 }
 
-.header-subtitle h2 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
-}
 
-.prompt-container {
-    place-content: flex-end center;
-    align-items: center;
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 16px;
-    height: min-content;
-    padding: 0px;
-    width: min-content;
-}
 
-.prompt-box {
-    border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
-    place-content: flex-start;
-    align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 10px;
-    height: 150px;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
-    width: 610px;
-    max-width: 1200px;
-    will-change: transform;
-    overflow: auto;
-    outline: none;
-    resize: none;
-    font-size: 16px;
-    font-style: normal;
-    letter-spacing: 0px;
-    line-height: 1.6em;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    text-transform: none;
-}
+
+
+
 
 textarea {
     font-family: 'Manrope', sans-serif;
@@ -119,7 +140,7 @@ textarea {
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:rgb(255, 246, 238)
 }
 
 
@@ -127,7 +148,7 @@ textarea {
     display: flex;
     place-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex: 0 0 auto;
     flex-flow: row nowrap;
     gap: 12px;
@@ -148,7 +169,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 246, 238);
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -172,8 +193,8 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
-    border-radius: 100px;
+    background-color: rgb(6, 184, 255);
+    border-radius: 15px;
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
@@ -205,59 +226,6 @@ textarea {
 .loading {
     opacity: 0.7;
     cursor: default;
-}
-
-.badge-container {
-    display: flex;
-    bottom: 20px;
-    flex: 0 0 auto;
-    height: auto;
-    left: 20px;
-    position: fixed;
-    width: auto;
-    z-index: 1;
-}
-
-.badge-container a {
-    border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 54.3478% / 238.095%;
-    filter: grayscale(1);
-    transform: none;
-    transform-origin: 50% 50% 0px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    line-height: 1em;
-    color: #fff;
-    padding: 12px;
-    text-decoration: none;
-}
-
-.badge {
-    display: flex;
-    align-items: center;
-}
-
-.badge img {
-    width: 21px;
-    height: 17px;
-    image-rendering: pixelated;
-    flex-shrink: 0;
-    fill: black;
-    color: black;
-    transform: none;
-    transform-origin: 50% 50% 0px;
-    padding-right: 5px;
-}
-
-.badge p {
-    margin: 0;
 }
 
 .grow {
@@ -297,33 +265,40 @@ textarea {
 }
 
 .output-header h3 {
-    font-family: "Manrope", serif;
+    font-family: "Lexend Deca", sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #ffffff;
+    color: rgb(255, 246, 238);
     text-decoration: none;
     text-transform: none;
-    margin: 0;
+    margin: 7px 0 0 0;
 }
 
 .output-content {
     outline: none;
     display: flex;
-    /* max-width: 25%; */
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 65.8vw;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
     flex-shrink: 0;
     transform: none;
+    background-color: rgb(255, 246, 238);
+    border: 1px solid rgb(255, 246, 238);
+    color:rgb(1, 1, 32);
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+
 }
 
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    width: 60.8vw;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
@@ -353,9 +328,7 @@ textarea {
         width: 100%;
     }
 
-    .prompt-box {
-        width: 100%;
-    }
+   
 }
 
 @media (max-width: 600px) {
@@ -385,9 +358,7 @@ textarea {
         width: 100%;
     }
 
-    .prompt-box {
-        width: 100%;
-    }
+    
 }
 
 
